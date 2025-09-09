@@ -1,0 +1,93 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background: linear-gradient(to right, #0098b3, #e6f5f8);
+}
+
+/* Container for whole layout */
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Left Panel */
+.left-panel {
+    width: 40%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+   
+    background-color: transparent;
+    color: #fff;
+}
+
+/* Logo */
+#logo {
+    width: 150px;
+    margin-bottom: 250px;
+    justify-content: flex-start;
+    background-color: transparent;
+    
+}
+
+/* Login Form */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+.login-form input::placeholder {
+    color: #eee;
+}
+
+.login-form button {
+    padding: 12px;
+    background-color: #0098b3;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #007e96;
+}
+
+/* Right Panel */
+.right-panel {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.hero-image {
+    max-width: 80%;
+    height: auto;
+}
